@@ -20,7 +20,7 @@ export class PacienteService {
   private db: any;
 
   getPacientes(): Observable<any> {
-    const pacientesCollection = collection(this.db, 'pacientes');
+    const pacientesCollection = collection(this.db, 'paciente');
     return from(getDocs(pacientesCollection)).pipe(
       map(querySnapshot => {
         return querySnapshot.docs.map(doc => doc.data());
