@@ -11,6 +11,12 @@ export class PacienteComponent implements OnInit {
 
   pacientes$!: Observable<any>;
   obj: any;
+  user: any = {};
+
+  submitForm() {
+    console.log(this.user); // Aqui você pode processar os dados do formulário
+    // Por exemplo, você pode enviar os dados para um serviço ou fazer outras operações necessárias
+}
 
 
   constructor(private pacienteService: PacienteService) {

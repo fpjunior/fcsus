@@ -1,1 +1,37 @@
 <p>paciente works!</p>
+<form #form="ngForm" (ngSubmit)="submitForm()">
+  <div class="p-fluid">
+    <div class="p-field">
+      <label for="username">Nome de Paciente</label>
+      <input type="text" id="username" name="username" pInputText [(ngModel)]="user.username" required>
+    </div>
+    <div class="p-field">
+      <label for="nsus">Nº SUS</label>
+      <input type="number" id="nsus" name="nsus" pInputText [(ngModel)]="user.nsus" required>
+    </div>
+    <div class="p-field">
+      <label for="cpf">CPF</label>
+      <input type="number" id="cpf" name="cpf" pInputText [(ngModel)]="user.cpf" required>
+    </div>
+    <div class="p-field">
+      <label for="cidade">Cidade</label>
+      <input type="text" id="cidade" name="cidade" pInputText [(ngModel)]="user.cidade" required>
+    </div>
+    <div class="p-field">
+      <label for="endereco">Endereço</label>
+      <input type="text" id="endereco" name="endereco" pInputText [(ngModel)]="user.endereco" required>
+    </div>
+    <div class="p-field">
+      <label for="cep">CEP</label>
+      <input type="text" id="cep" name="cep" pInputText [(ngModel)]="user.cep" required>
+    </div>
+
+    <div class="p-field">
+      <label for="password">Senha</label>
+      <input type="password" id="password" name="password" pInputText [(ngModel)]="user.password" required>
+    </div>
+    <div class="p-field">
+      <button type="submit" pButton label="Enviar"></button>
+    </div>
+  </div>
+</form>

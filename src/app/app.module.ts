@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { PacienteComponent } from './paciente/paciente.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InputTextModule } from 'primeng/inputtext'
+import { ButtonModule } from 'primeng/button'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +19,12 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    InputTextModule,
+    BrowserAnimationsModule,
+    ButtonModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
