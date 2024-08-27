@@ -1,100 +1,72 @@
+form {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para os campos do formulário */
 .p-field {
-  margin-top: 1em;
-  margin-left: 1em;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
 
-#username {
-  width: 60%;
-  margin-top: 1em;
-  margin-left: 1em;
+/* Estilos para inputs */
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
 }
 
-#dtNascimento {
-  width: 50%;
-  margin-top: 1em;
-  margin-left: 1em;
+/* Estilos para o botão de envio */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
+/* Estilos para telas pequenas */
+@media (max-width: 768px) {
+  .p-field {
+    width: 100%;
   }
 
-  #nsus {
-  width: 50%;
-  margin-top: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
-
-
+  input[type="text"],
+  input[type="number"],
+  input[type="date"] {
+    width: 100%;
   }
 
-#cpf {
-  width: 50%;
-  margin-top: 1em;
-  margin-left: 1em;
+  button[type="submit"] {
+    width: 100%;
+  }
 }
 
-#sexo {
-  width: 15%;
-  margin-top: 1em;
-  margin-left: 1em;
-}
-
-#escolaridade {
-  width: 40%;
-  margin-top: 1em;
-  margin-left: 1em;
-}
-
-#estadocivil {
-  width: 40%;
-   margin-top: 1em;
-   margin-left: 1em;
-}
-
-#telefone {
-  width: 50%;
-  margin-top: 1em;
-  margin-left: 1em;
-}
-
-#namemae {
-  width: 65%;
-  margin-top: 1em;
-  margin-left: 1em;
-}
-
-#endereco {
-  width: 60%;
-  margin-top: 1em;
-  margin-left: 1em;
-}
-
-#cep {
-  width: 50%;
-  margin-top: 1em;
-  margin-left: 1em;
-}
-
-#cidade {
-  width: 50%;
-  margin-top: 1em;
-  margin-left: 1em;
-}
-
-#uf {
-  width: 20%;
-  margin-top: 1em;
-  margin-left: 1em;
-}
-
-#dtCadastro {
-  width: 50%;
-  margin-top: 1em;
-  margin-left: 1em;
-  //display: inline-block;
+/* Estilos para telas maiores */
+@media (min-width: 769px) {
+  .p-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
-#Enviar {
-  width: 20%;
-  margin-top: 1em;
-  margin-left: 70em;
+  .p-field label {
+    width: 8%;
+    margin-right: 0px;
   }
+
+  .p-field input {
+    width: 20%;
+  }
+
+  button[type="submit"] {
+    width: auto;
+    margin-left: auto;
+  }
+}
