@@ -1,4 +1,11 @@
-<p>lista-paciente works!</p>
+<p>lista de Pacientes</p>
 
 
-
+<div>
+  <h3>Lista de Usuários Cadastrados</h3>
+  <ul>
+    <li *ngFor="let usuario of usuarios">
+      {{ usuario.usuario }} - {{ usuario.cpf }} - {{ usuario.dtnasnimento }} - {{ usuario.nSUS }}
+    </li>
+  </ul>
+</div>
